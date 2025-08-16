@@ -135,7 +135,8 @@ body {
     }
 }
 
-.main-content {
+.main-content,
+.about-us-content {
     position: relative;
     z-index: 2;
     justify-content: center;
@@ -173,4 +174,225 @@ body {
     }
 
 
+}
+
+.about-us-content {
+    max-width: 100% !important;
+    color: white !important;
+    padding-right: 20px;
+
+    >p {
+        padding: 12px 8px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+    }
+}
+button {
+    cursor: pointer;
+}
+.recommendations-content {
+    position: absolute;
+    right: 114px;
+    top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row;
+    max-height: calc(100vh - 20px);
+    overflow-y: scroll;
+    width: 354px;
+
+    .recommendation-card {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .recommendation-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .recommendation-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .recommendation-card .card-body {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .recommendation-card h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .recommendation-card p {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    .recommendation-card .btn-visit {
+        align-self: flex-start;
+        padding: 8px 18px;
+        background: #00897B;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .recommendation-card .btn-visit:hover {
+        background: #00695C;
+    }
+}
+
+.team-section {
+    padding: 50px 20px;
+    /* leve overlay */
+}
+
+.team-section h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    width: 60px;
+    margin-right: 100px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-card {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.team-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    margin: 10px 0 5px;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.role-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: #1a3e85;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-us-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    color: #fff;
+    width: calc(100vw - 52px);
+    max-width: 100% !important;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1100px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 18px;
+}
+
+.contact-form {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: #00796b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #004d40;
 }
